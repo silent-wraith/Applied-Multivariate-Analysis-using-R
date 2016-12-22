@@ -1,0 +1,24 @@
+digraph "ability_sem" {
+  rankdir=LR;
+  size="8,8";
+  node [fontname="Helvetica" fontsize=14 shape=box];
+  edge [fontname="Helvetica" fontsize=10];
+  center=1;
+  "Aspiration" [shape=ellipse]
+  "Ability" [shape=ellipse]
+  "Ability" -> "SCA" [label="lambda1=0.86"];
+  "Ability" -> "PPE" [label="lambda2=0.85"];
+  "Ability" -> "PTE" [label="lambda3=0.81"];
+  "Ability" -> "PFE" [label="lambda4=0.7"];
+  "Aspiration" -> "EA" [label="lambda5=0.78"];
+  "Aspiration" -> "CP" [label="lambda6=0.93"];
+  "Ability" -> "Aspiration" [label="rho=0.67" dir=both];
+  "SCA" -> "SCA" [label="theta1=0.25" dir=both];
+  "PPE" -> "PPE" [label="theta2=0.28" dir=both];
+  "PTE" -> "PTE" [label="theta3=0.35" dir=both];
+  "PFE" -> "PFE" [label="theta4=0.52" dir=both];
+  "EA" -> "EA" [label="theta5=0.4" dir=both];
+  "CP" -> "CP" [label="theta6=0.14" dir=both];
+  "Ability" -> "Ability" [label="1=1" dir=both];
+  "Aspiration" -> "Aspiration" [label="1=1" dir=both];
+}

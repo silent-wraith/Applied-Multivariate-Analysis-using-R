@@ -1,0 +1,19 @@
+SES      -> Educ, NA, 1
+SES           -> SEI, lambda1, NA
+Alienation67  -> Anomia67, NA, 1
+Alienation67  -> Powles67, lambda2, NA
+Alienation71  -> Anomia71, NA, 1
+Alienation71  -> Powles71, lambda3, NA
+SES           -> Alienation67, beta1, NA
+SES           -> Alienation71, beta2, NA
+Alienation67  -> Alienation71, beta3, NA
+Educ         <-> Educ, theta1, NA
+SEI          <-> SEI, theta2, NA
+SES          <-> SES, delta0, NA
+Anomia67     <-> Anomia67, theta3, NA
+Powles67     <-> Powles67, theta4, NA
+Anomia71     <-> Anomia71, theta5, NA
+Powles71     <-> Powles71, theta6, NA
+Alienation67 <-> Alienation67, delta1, NA
+Alienation71 <-> Alienation71, delta2, NA
+Anomia67 <-> Anomia71,psi,NA

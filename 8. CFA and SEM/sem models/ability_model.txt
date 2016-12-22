@@ -1,0 +1,15 @@
+Ability     -> SCA, lambda1, NA
+Ability     -> PPE, lambda2, NA
+Ability     -> PTE, lambda3, NA
+Ability     -> PFE, lambda4, NA
+Aspiration  -> EA, lambda5, NA
+Aspiration  -> CP, lambda6, NA
+Ability    <-> Aspiration, rho, NA
+SCA        <-> SCA, theta1, NA
+PPE        <-> PPE, theta2, NA
+PTE        <-> PTE, theta3, NA
+PFE        <-> PFE, theta4, NA
+EA         <-> EA, theta5, NA
+CP         <-> CP, theta6, NA
+Ability    <-> Ability, NA, 1
+Aspiration <-> Aspiration, NA, 1
